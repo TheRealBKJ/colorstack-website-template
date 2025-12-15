@@ -7,6 +7,20 @@ This template is designed for:
 - Clean separation of frontend and backend concerns
 - Future extensibility (auth, dashboards, events, members, sponsors)
 
+
+Basic functions of website
+- provide info for chapter pages
+- show leadership
+- show mission statement
+- chapter calendar
+- signup for events
+- contact info
+- show chapter events
+- show sponsors
+- upload resumes to school book(user route protected)
+- login for users/members of chapters 
+  
+
 ---
 
 ## Tech Stack
@@ -15,12 +29,10 @@ This template is designed for:
 - Next.js (App Router)
 - TypeScript
 - Tailwind CSS
-- Server Components by default, Client Components where necessary
 
 ### Backend
 - Express.js
 - REST API architecture
-- Typed request/response contracts
 
 ### Authentication & Data
 - Supabase Auth (email/password, OAuth-ready)
