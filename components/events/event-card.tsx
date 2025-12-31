@@ -1,28 +1,25 @@
-import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import type  {EventType} from "@/types/event";
+import Image from "next/image";
+import { Card } from "@/components/ui/card";
+import type { EventType } from "@/types/event";
 
-
-export default function EventCard({ event }:{ event: EventType }) {
+export default function EventCard({ event }: { event: EventType }) {
   return (
-    <Card className="hover:shadow-md transition">
-      <CardHeader>
-        <CardTitle>{event.title}</CardTitle>
-        <CardDescription>{event.date} • {event.time}</CardDescription>
-      </CardHeader>
+    <Card className="overflow-hidden rounded-2xl shadow-sm hover:shadow-md transition bg-white">
+      {/* Image Section */}
+      <div className="relative w-full h-48">
+        <Image
+          src={event.image}
+          alt={event.title}
+          fill
+          className="object-cover"
+        />
+      </div>
 
-      <CardContent>
-        <p>{event.description}</p>
-        <p className="mt-2 text-sm text-muted-foreground">📍 {event.location}</p>
-      </CardContent>
-
-      <CardFooter>
-        {event.link && (
-          <Button variant="outline" asChild>
-            <a href={event.link} target="_blank" rel="noopener noreferrer">View Details</a>
-          </Button>
-        )}
-      </CardFooter>
+      {/* Text Section */}
+      <div className="p-5">
+        <h3 className="text-2xl font-semibold">{event.title}</h3>
+        <p className="text-red-600 font-medium mt-1">{event.date}</p>
+      </div>
     </Card>
   );
 }
