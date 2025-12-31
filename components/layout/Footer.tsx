@@ -2,7 +2,7 @@ import { faInstagram, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import Link from "next/link";
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "../../config/site.example";
 
 export function Footer() {
   return (

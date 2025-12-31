@@ -8,7 +8,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import { siteConfig } from "@/config/site";
+import { siteConfig } from "@/config/site.example";
 
 export function NavigationBar() {
   const pathname = usePathname();
