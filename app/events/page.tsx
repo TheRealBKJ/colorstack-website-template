@@ -1,3 +1,9 @@
+import EventCalendar from "@/components/events/event-calendar";
+
 export default function Events() {
-  return <></>;
+  return (
+    <div>
+      <EventCalendar />
+    </div>
+  );
 }
