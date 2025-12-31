@@ -40,6 +40,11 @@ Basic functions of website
 - Row Level Security (RLS) for chapter-level isolation
 
 ---
+## Supabase Image / Bucket Setup and Database Setup
+
+-coming soon
+
+---
 
 # Boilerplate Next.js README
 
